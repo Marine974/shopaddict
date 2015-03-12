@@ -1,0 +1,28 @@
+<?php
+include_once('model/getDetailCcm.php');
+
+if(isset($_POST['identmall']) )
+{
+	$magasins = getMagasinsByCcm($_POST['identmall']);
+	
+	foreach($magasins as $cle => $magasin)
+	{
+		$magasins[$cle]['nom_store'] = htmlspecialchars($mall['nom_store']);
+		$magasins[$cle]['type_store'] = htmlspecialchars($mall['type_store']);
+		$magasins[$cle]['description_store'] = htmlspecialchars($mall['description_store']);
+		
+	}
+}/*else
+{	
+	$malls = getMalls();
+
+	foreach($malls as $cle => $mall)
+	{
+		$malls[$cle]['nom_mall'] = htmlspecialchars($mall['nom_mall']);
+		$malls[$cle]['adresse_mall'] = htmlspecialchars($mall['adresse_mall']);
+		$malls[$cle]['cp_mall'] = htmlspecialchars($mall['cp_mall']);
+		$malls[$cle]['tel_mall'] = htmlspecialchars($mall['tel_mall']);
+		$malls[$cle]['horaire_mall'] = htmlspecialchars($mall['horaire_mall']);
+	}
+}*/
+include_once('view/vueDetailCcm.php');

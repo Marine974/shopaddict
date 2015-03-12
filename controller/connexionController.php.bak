@@ -1,0 +1,41 @@
+<?php //vérifie si les données entrées dans le formulaire de connexion sont correctes
+
+if (isset($_POST['password']) && $_POST['password'] == 'shopaddict' && isset($_POST['login']) && $_POST['login'] == 'shopaddict')
+{
+	session_start();
+		$_SESSION['login'] = $_POST['login'];
+		$_SESSION['password'] = $_POST['password'];
+		header ('location: index.php'); //redirige vers la page d'accueil
+}else
+{
+	include 'view/vueConnexion.php';
+}
+
+/*if (isset($_POST['password']) && isset($_POST['login']))
+{
+	include 'model/connexionBdd.php';
+	$req = $bdd->prepare('SELECT email_user, password FROM user u
+								WHERE u.email_user = "%'.$_POST['login'].'%" 
+								AND u.password = "%'.$_POST['password'].'%"');
+	$req->execute(array(
+		 'email_user' => $_POST['login'],
+		 'password' => $_POST['password']));
+
+	$resultat = $req->fetch();
+
+	if (!$resultat)
+	{
+		 echo 'Mauvais identifiant ou mot de passe !';
+	}
+	else
+	{
+		session_start();
+		$_SESSION['login'] = $_POST['login'];
+		$_SESSION['password'] = $_POST['password'];
+		header ('location: index.php'); //redirige vers la page d'accueil
+	}
+					
+}else
+{
+	include 'view/vueConnexion.php';
+}*/

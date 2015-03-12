@@ -1,0 +1,430 @@
+﻿/*corps de la page*/
+body
+{
+margin: 0px;
+padding: 0px;
+font-family: calibri;
+font-size: 120%;
+width: 100%;
+height: 100%;
+}
+
+#bloc_page
+{
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+position: absolute;
+}
+
+/*header*/
+#header
+{
+background-color: black;
+color: white;
+margin: 0px;
+padding: 8px;
+}
+
+#connecter
+{
+display: inline-block;
+position: absolute;
+top: -3px;
+right: 100px;
+padding-top: 10px;
+}
+
+#connecter a
+{
+color: white;
+text-decoration: none;
+}
+
+#connecter a:hover
+{
+color: white;
+text-decoration: underline;
+}
+
+#deconnecter
+{
+display: inline-block;
+position: absolute;
+top : 0px;
+right: 100px;
+padding-top: 10px;
+}
+
+#deconnecter a
+{
+color: white;
+text-decoration: none;
+}
+
+#deconnecter a:hover
+{
+color: white;
+text-decoration: underline;
+}
+
+#menu
+{
+display: inline-block;
+position: absolute;
+top: 0px;
+right: 10px;
+padding-top: 10px;
+}
+
+.menu_deroulant
+{
+display: none;
+margin-right: -10px;
+padding-left: 5px;
+width: 250px;
+background-color: rgba(0,0,0,0.85);
+z-index: 2;
+}
+
+.menu_deroulant ul
+{
+padding: 0px;
+margin-left: 5px;
+list-style-type: none;
+}
+
+.menu_deroulant a
+{
+	color: white;
+	text-decoration: none;
+}
+
+.menu_deroulant a:hover
+{
+	color: #009cff;
+}
+
+.menu_deroulant li
+{
+line-height: 40px;
+}
+
+#menu:hover .menu_deroulant
+{
+display: block;
+position: absolute;
+right: 0px;
+}
+
+/*contenu page d'accueil*/
+.presentation
+{
+background-image: url("pres12.jpg");
+width: 100%;
+height: 530px;
+}
+
+.text_pres
+{
+width: 400px;
+border-radius: 8px;
+background-color: rgba(0,0,0,0.85);
+color: white;
+padding-left: 8px;
+padding-right: 8px;
+padding-bottom: 8px;
+margin: 0px;
+position: absolute;
+top: 200px;
+left: 240px;
+}
+
+.bouton_telecharger
+{
+background-color: #009cff;
+border-radius: 5px;
+position: absolute;
+top: 430px;
+left: 390px;
+text-align: center;
+color: white;
+font-weight: bold;
+padding: 8px;
+}
+
+.fonction1
+{
+background-image: url("degrade_bleu2.jpg");
+overflow:hidden;
+padding-top: 20px;
+padding-bottom: 20px;
+position: relative;
+}
+
+.image1
+{
+position: relative;
+left: 200px;
+}
+
+.text_fonc1
+{
+width: 400px;
+border-radius: 8px;
+background-color: rgba(0,0,0,0.6);
+color: white;
+padding-left: 8px;
+padding-right: 8px;
+padding-bottom: 8px;
+position: absolute;
+left: 570px;
+top: 170px;
+margin: 0px;
+}
+
+.fonction2
+{
+background-image: url("fond_bois.jpg");
+overflow:hidden;
+padding-top: 100px;
+padding-bottom: 100px;
+position: relative;
+}
+
+.image2
+{
+text-align: right;
+padding-right: 200px;
+}
+
+.text_fonc2
+{
+width: 400px;
+border-radius: 8px;
+background-color: rgba(0,0,0,0.6);
+color: white;
+padding-left: 8px;
+padding-right: 8px;
+padding-bottom: 8px;
+position: absolute;
+right: 670px;
+top: 170px;
+margin: 0px;
+}
+
+/*footer*/
+#footer
+{
+position: relative;
+bottom: 0px;
+background-color: black;
+color: white;
+text-align: center;
+width: 100%;
+padding: 0px;
+margin-bottom: 0px;
+z-index: 1;
+}
+
+#reseaux_sociaux
+{
+display: inline-block;
+text-align: center;
+}
+
+.suivre
+{
+position: relative;
+bottom: 20px;
+}
+
+/*contenu de la page comparateur*/
+.comparateur
+{
+width: 80%;
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
+border-left: 0px black solid;
+border-right: 0px black solid;
+z-index: 2;
+}
+
+.comparateur div
+{
+background-color: #e2e2e2;
+margin: 0px;
+padding: 0px 20px;
+}
+
+/*menu catégories de la page comparateur*/
+.catégories
+{
+display: inline-block;
+width: 200px;
+position: absolute;
+left: 0px;
+background-color: black;
+color: white;
+padding-left: 0px;
+text-align: center;
+border-radius: 5px 5px 0px 0px;
+z-index: 2;
+}
+
+.catégories div
+{
+font-weight: bold;
+background-color: #009cff;
+border-radius: 5px;
+height: 40px;
+display: table-cell;
+vertical-align: middle;
+width: 200px;
+}
+
+.catégories ul
+{
+list-style-type: none;
+padding: 0px;
+margin-left: 5px;
+}
+
+.catégories a
+{
+	color: white;
+	text-decoration: none;
+}
+
+.catégories a:hover
+{
+	color: #009cff;
+}
+
+.catégories li
+{
+line-height: 40px;
+}
+
+input[type="submit"]
+{
+border:none;
+background:black;
+color:white;
+font-size: 100%;
+font-family: calibri;
+height: 40px;
+}
+
+input[type="submit"]:hover
+{
+border:none;
+background:#000;
+color:#009cff;
+font-size: 100%;
+font-family: calibri;
+}
+
+input[type="submit"]:focus
+{
+border:0px;
+background:#000;
+color:#009cff;
+font-size: 100%;
+font-family: calibri;
+text-decoration: none;
+outline: none;
+}
+
+input[name="recherche"]
+{
+height: 40px;
+width: 100%;
+font-size: 100%;
+position: relative;
+margin: auto;
+}
+
+input[name="departement"]
+{
+height: 40px;
+width: 12%;
+font-size: 100%;
+position: relative;
+margin: auto;
+}
+
+
+select[name="type_produit"]
+{
+font-size: 90%;
+display: block;
+position: relative;
+margin: auto;
+}
+
+
+input[type="range"]
+{
+width: 80px;
+}
+
+fieldset
+{
+margin: auto;
+width: 45%;
+}
+
+input[value="Rechercher"]
+{
+font-size: 100%;
+font-weight: bold;
+width: 19%;
+float:right;
+position: relative;
+margin: auto;
+}
+
+table
+{
+border-collapse: collapse;
+width: 100%;
+}
+
+td
+{
+border: 1px solid #cccccc;
+padding-left: 10px;
+}
+
+th
+{
+text-align: left;
+background-color: #e2e2e2;
+height: 30px;
+padding-left: 10px;
+}
+
+th[class="prix"]
+{
+border-left: 1px solid white;
+}
+
+td a
+{
+color: #0f9cff;
+font-weight: bold;
+text-decoration: none;
+}
+
+td a:hover
+{
+color: #ff8800;
+}
+
+.prix
+{
+width: 25%;
+}

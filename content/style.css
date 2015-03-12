@@ -1,0 +1,559 @@
+html
+{
+height: 100%;
+min-width: 1200px;
+}
+
+/**************************************************************/
+/**************************************************************/
+/* corps de la page */
+body
+{
+margin: 0px;
+padding: 0px;
+font-family: calibri;
+font-size: 120%;
+width: 100%;
+min-height: 100%;
+position: relative;
+overflow: auto;
+}
+
+#bloc_page
+{
+width: 100%;
+margin: 0px;
+padding: 0px;
+min-height: 100%;
+}
+/* fin corps de la page */
+/**************************************************************/
+/**************************************************************/
+
+
+/**************************************************************/
+/**************************************************************/
+/* header */
+#header
+{
+background-color: black;
+color: white;
+margin: 0px;
+padding: 8px;
+z-index: 3;
+}
+
+/* connexion */
+#connecter
+{
+display: inline-block;
+position: absolute;
+top: 0px;
+right: 100px;
+padding-top: 0px;
+}
+
+#connecter a
+{
+color: white;
+text-decoration: none;
+}
+
+#connecter a:hover
+{
+color: white;
+text-decoration: underline;
+}
+/* fin connexion */
+
+/* déconnexion */
+#deconnecter
+{
+display: inline-block;
+position: absolute;
+top: 0px;
+right: 100px;
+padding-top: 10px;
+}
+
+#deconnecter a
+{
+color: white;
+text-decoration: none;
+}
+
+#deconnecter a:hover
+{
+color: white;
+text-decoration: underline;
+}
+/* fin déconnexion */
+
+/* menu */
+#menu
+{
+display: inline-block;
+position: absolute;
+top: 0px;
+right: 10px;
+padding-top: 10px;
+}
+
+.menu_deroulant
+{
+display: none;
+margin-right: -10px;
+padding-left: 5px;
+width: 250px;
+background-color: rgba(0,0,0,0.85);
+z-index: 2;
+}
+
+.menu_deroulant ul
+{
+padding: 0px;
+margin-left: 5px;
+list-style-type: none;
+}
+
+.menu_deroulant a
+{
+	color: white;
+	text-decoration: none;
+}
+
+.menu_deroulant a:hover
+{
+	color: #009cff;
+}
+
+.menu_deroulant li
+{
+line-height: 40px;
+}
+
+#menu:hover .menu_deroulant
+{
+display: block;
+position: absolute;
+right: 0px;
+}
+/* fin menu */
+/* fin header */
+/**************************************************************/
+/**************************************************************/
+
+
+/**************************************************************/
+/**************************************************************/
+/* contenu page d'accueil */
+/* contenu de la présentation de l'application */
+.presentation
+{
+background-image: url("pres12.jpg");
+overflow: hidden;
+height: 530px;
+}
+
+/* texte de présentation de l'application */
+.text_pres
+{
+width: 400px;
+border-radius: 8px;
+background-color: rgba(0,0,0,0.85);
+color: white;
+padding-left: 8px;
+padding-right: 8px;
+padding-bottom: 8px;
+margin: 0px;
+position: absolute;
+top: 200px;
+left: 240px;
+}
+
+/* bouton télécharger de l'application */
+.bouton_telecharger
+{
+background-color: #009cff;
+border-radius: 5px;
+position: absolute;
+top: 430px;
+left: 390px;
+text-align: center;
+color: white;
+font-weight: bold;
+padding: 8px;
+}
+
+/* contenu de la première fonctionnalité */
+.fonction1
+{
+background-image: url("degrade_bleu2.jpg");
+overflow:hidden;
+padding-top: 20px;
+padding-bottom: 20px;
+position: relative;
+}
+
+/* image dans la première fonctionnalité */
+.image1
+{
+position: relative;
+left: 200px;
+}
+
+/* texte dans la première fonctionnalité */
+.text_fonc1
+{
+width: 400px;
+border-radius: 8px;
+background-color: rgba(0,0,0,0.6);
+color: white;
+padding-left: 8px;
+padding-right: 8px;
+padding-bottom: 8px;
+position: absolute;
+left: 570px;
+top: 170px;
+margin: 0px;
+}
+
+/* contenu deuxième fonctionnalité */
+.fonction2
+{
+background-image: url("fond_bois.jpg");
+overflow:hidden;
+padding-top: 100px;
+padding-bottom: 100px;
+position: relative;
+}
+
+/* image de la deuième fonctionnalité */
+.image2
+{
+position: relative;
+left: 700px;
+}
+
+/* texte dans la deuxième fonctionnalité */
+.text_fonc2
+{
+width: 400px;
+border-radius: 8px;
+background-color: rgba(0,0,0,0.6);
+color: white;
+padding-left: 8px;
+padding-right: 8px;
+padding-bottom: 8px;
+position: absolute;
+top: 180px;
+margin-left: 200px;
+}
+/* fin contenu page d'accueil */
+/**************************************************************/
+/**************************************************************/
+
+
+/**************************************************************/
+/**************************************************************/
+/* footer */
+#footer
+{
+position: relative;
+bottom: 0px;
+background-color: black;
+color: white;
+text-align: center;
+width: 100%;
+height: 180px;
+padding: 0px;
+margin-bottom: 0px;
+clear: both;
+z-index: 1;
+}
+
+#reseaux_sociaux
+{
+display: inline-block;
+text-align: center;
+}
+
+.suivre
+{
+position: relative;
+bottom: 20px;
+}
+/* fin footer */
+/**************************************************************/
+/**************************************************************/
+
+
+/**************************************************************/
+/**************************************************************/
+/* contenu_page */
+.contenu_page
+{
+width: 70%;
+height: auto;
+padding-top: 10px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0px;
+border-left: 2px black solid;
+border-right: 2px black solid;
+z-index: 2;
+}
+
+
+/* tableau comparateur de prix */
+table
+{
+border-collapse: collapse;
+width: 100%;
+font-size: 100%;
+}
+
+td
+{
+border: 1px solid #cccccc;
+padding-left: 10px;
+}
+
+th
+{
+text-align: left;
+background-color: #e2e2e2;
+height: 30px;
+padding-left: 10px;
+}
+
+th[class="prix"]
+{
+border-left: 1px solid white;
+}
+
+td a
+{
+color: #0f9cff;
+font-weight: bold;
+text-decoration: none;
+}
+
+td a:hover
+{
+color: #ff8800;
+}
+
+.cellRight
+{
+border-left: none;
+}
+
+.cellLeft
+{
+border-right: none;
+}
+
+/* colonne produit dans comparateur de prix */
+.produit
+{
+width: 70%;
+}
+
+/* colonne prix dans comparateur de prix */
+.prix
+{
+width: 15%;
+}
+/* fin tableau comparateur de prix */
+
+/* image dans la liste des produits du comparateur */
+.img-prod-list
+{
+width: 100px;
+height: 100px;
+float: left;
+margin-right: 10px;
+}
+/* fin comparateur de prix */
+/* fin contenu de la page */
+/**************************************************************/
+/**************************************************************/
+
+
+/**************************************************************/
+/**************************************************************/
+/* boutons submit*/
+input[type="submit"]
+{
+display: inline-block;
+border:none;
+background:black;
+color:white;
+font-size: 100%;
+font-family: calibri;
+height: 40px;
+min-width: 90px;
+margin-bottom: 2px;
+}
+
+/* boutons submit lorsque la souris survol le bouton */
+input[type="submit"]:hover
+{
+border:none;
+background:#000;
+color:#009cff;
+font-size: 100%;
+font-family: calibri;
+}
+
+/* boutons submit lorsqu'ils sont "focus" */
+input[type="submit"]:focus
+{
+border:0px;
+background:#000;
+color:#009cff;
+font-size: 100%;
+font-family: calibri;
+text-decoration: none;
+outline: none;
+}
+
+/* barre de recherche dans comparateur de prix et liste centres commerciaux */
+input[name="recherche"]
+{
+height: 40px;
+width: 100%;
+font-size: 100%;
+margin-bottom: 5px;
+}
+
+/* barre de recherche departement dans comparateur de prix et liste centres commerciaux */
+input[name="departement"]
+{
+height: 30px;
+width: 30%;
+font-size: 100%;
+margin-bottom: 5px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.inputAndSubmit
+{
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* liste déroulante types produits */
+select[id="type_produit"]
+{
+display: inline-block;
+font-size: 90%;
+height: 30px;
+margin-bottom: 5px;
+vertical-align: middle;
+}
+
+
+input[type="range"]
+{
+width: 150px;
+}
+
+
+/* bouton rechercher sur comparateur de prix et liste centres commerciaux */
+input[value="Rechercher"]
+{
+font-size: 100%;
+font-weight: bold;
+width: 19%;
+position: relative;
+margin: auto;
+}
+
+.budget
+{
+display: inline-block;
+width: 96%;
+margin-bottom: 5px;
+text-align: center;
+border: 1px solid silver;
+padding-top: 0px;
+margin-bottom: 5px;
+}
+
+
+
+
+/**************************************************************/
+/**************************************************************/
+
+
+
+/**************************************************************/
+/**************************************************************/
+/* fiche produit */
+/* image dans la fiche produit */
+.img-prod-fiche
+{
+width: 400px;
+height: 400px;
+margin-right: 50px;
+margin-left: 40px;
+margin-top: 30px;
+margin-bottom: 20px;
+border: 1px silver solid;
+}
+
+/* image dans la liste des produits similaires d'une fiche produit */
+.img-prod-sim
+{
+width: 100px;
+height: 100px;
+float: left;
+margin-left: 25px;
+border: 1px silver solid;
+}
+
+/* nom du produit sur une fiche produit */
+.nom_prod
+{
+color: #0f9cff;
+}
+
+/* produits similaires sur une fiche produit */
+.prod_sim
+ {
+ clear: both;
+ }
+ /* fin fiche produit */
+/**************************************************************/
+/**************************************************************/
+
+
+/**************************************************************/
+/**************************************************************/
+/* fiche mall */
+
+iframe
+{
+border: 1px solid silver;
+width: 400px;
+height: 200px;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+
+/* fin fiche mall */
+/**************************************************************/
+/**************************************************************/
+
+.small
+{
+font-size: 70%;
+}

@@ -1,0 +1,30 @@
+<?php
+function getMagasinsByCcm()
+{
+	include('connexionBdd.php');
+	$idCcm=$_POST['identmall'];
+	$req=$bdd->prepare("SELECT nom_store, type_store, description_store
+																	FROM store 
+																	
+																	WHERE store.Mall_id_mall='$idCcm'
+																	ORDER BY nom_store ;");
+	$req->execute();
+	$magasins = $req->fetchAll();
+	
+	return $magasins;
+}
+
+/*function getMallsRecherche($recherche)
+{
+	include('connexionBdd.php');
+	
+	//J'ai rajoué le id_mall à la requete
+	$req=$bdd->prepare('	SELECT id_mall, nom_mall, adresse_mall, cp_mall, tel_mall, horaire_mall
+								FROM mall m
+								WHERE m.nom_mall LIKE "%'.$recherche.'%"
+								ORDER BY nom_mall');
+	$req->execute();
+	$malls = $req->fetchAll();
+	
+	return $malls;
+}*/
