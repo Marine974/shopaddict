@@ -1,0 +1,32 @@
+nav[id="menu_horizontal"]
+{
+   display: inline-block;
+   width: 100%;
+   text-align: center;
+	text-transform: uppercase;
+}
+
+nav[id="menu_horizontal"] ul
+{
+    list-style-type: none;
+}
+
+nav[id="menu_horizontal"] li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav[id="menu_horizontal"] a
+{
+    font-size: 14px;
+    color: #ffffff;
+    padding-bottom: 0px;
+    text-decoration: none;
+}
+
+nav[id="menu_horizontal"] a:hover
+{
+    color: #009cff;
+    border-bottom: 1px solid #009cff;
+}
